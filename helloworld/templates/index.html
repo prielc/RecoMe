@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>RecoMe - {{ title }}</title>
+        </head>
+        <body>
+            <p>number of items: {{ counter }}</p>
+            <ul>
+            {% for item in response %}
+                <li>{{ item|safe }}</li>
+            {% endfor %}
+            </ul>
+            
+        </body>
+</html>
